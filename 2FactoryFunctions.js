@@ -1,3 +1,11 @@
+// The "New Way" (Arrow function shorthand)
+const getBoard = () => board;
+
+// The "Old Way" (Function keyword)
+const getBoard = function() {
+  return board;
+};
+
 //*PRIVATE VARIABLES AND FUNCTIONS*/
 // A varaible by default is public in hjavascript. 
 // In factory functions, private variables are achieved through closures. 
@@ -63,6 +71,9 @@ const calculator = (function() {
     sub
   };
 })(); // runs but does not console log anything. 
+
+calculator.add(3,5);
+
 
 // Usage:
 //console.log(calculator.add(5, 3)); // 8
