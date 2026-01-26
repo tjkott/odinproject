@@ -1,0 +1,21 @@
+h1 {
+  font-family: /* Fall back fonts */
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  font-size: 38px;
+}
+
+.wide {
+  font-size: 24px;
+  letter-spacing: 0.5em;
+}
+
+.narrow {
+  font-size: 48px;
+  letter-spacing: -0.15em;
+}
+
+p.line-height {
+  line-height: 3.5;
+}

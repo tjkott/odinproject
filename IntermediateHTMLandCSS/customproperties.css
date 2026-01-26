@@ -1,0 +1,67 @@
+/*custom properties are declared with double hyphen*/
+
+.error-modal {
+  --color-error-text: red;
+  --modal-border: 1px solid black;
+  --modal-font-size: calc(2rem + 5vw);
+
+  color: var(--color-error-text);
+  border: var(--modal-border);
+  font-size: var(--modal-font-size);
+}
+
+/* var() function
+ * 1st parameter: custom property we want to assign.
+ * 2nd parameter: optional fallback value. */
+
+/* :root selector combined with custom properties:
+ * Gives us the ability to add themes*/
+
+:root.dark {
+  --border-btn: 1px solid rgb(220, 220, 220);
+  --color-base-bg: rgb(18, 18, 18);
+  --color-base-text: rgb(240, 240, 240);
+  --color-btn-bg: rgb(36, 36, 36);
+}
+
+:root.light {
+  --border-btn: 1px solid rgb(36, 36, 36);
+  --color-base-bg: rgb(240, 240, 240);
+  --color-base-text: rgb(18, 18, 18);
+  --color-btn-bg: rgb(220, 220, 220);
+}
+
+body,
+.theme-toggle {
+  color: var(--color-base-text);
+}
+
+body {
+  background-color: var(--color-base-bg);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.theme-toggle {
+  background-color: var(--color-btn-bg);
+  border: var(--border-btn);
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+}
+
+.theme-toggle:focus {
+  outline: var(--border-btn);
+}

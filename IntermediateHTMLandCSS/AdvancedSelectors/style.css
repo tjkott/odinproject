@@ -1,0 +1,55 @@
+/*Main class*/
+main div {
+}
+/*Child classes get selected*/
+main > div {
+}
+
+/* grand0child divs get selected*/
+main > div > div {
+}
+
+/* Pseudo classes*/
+/* This rule will apply to all links */
+a {
+  text-decoration: underline;
+}
+
+/* This will apply to unvisited links */
+a:link {
+  color: blue;
+}
+
+/* And you guessed it, this applies to all links the user has clicked on */
+a:visited {
+  color: purple;
+}
+
+/* Structural pseudo-classes */
+/* to select elements based on position. */
+
+/* Pseudo Elements */
+/* Allows us to interact with parts that are NOT elements. */
+/* 
+ * ::marker -- ustomise styling of <li> 
+ * ::first0letter -- special stylingto the first letter
+ * ::before / ::after -- add extra elements on to the page*/
+
+/* Attribute Selectors*/
+/* Attribute -- znything in the opening tag of an html element.
+ * e.g.: src / href. */
+
+[src] {
+  /*[attribute]*/
+  /* general selctor will select anything with given attribute. */
+}
+
+img[src] {
+  /* selector[attribute]*/
+  /* only select img elements which has src attribute.*/
+}
+
+img[src="puppy.jpg"] {
+  /*selector[attribute='value']*/
+  /* will select img elements with a src attribute that is exactly the given value. */
+}

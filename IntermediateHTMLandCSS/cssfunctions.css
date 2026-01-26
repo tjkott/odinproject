@@ -1,0 +1,31 @@
+/* Calc() function*/
+:root {
+  --header: 3rem;
+  --footer: 40px;
+
+  --main: calc(100vh - calc(var(--header) + var(--footer)));
+  /* Mixing variables
+   * */
+}
+
+/* min() & max() function */
+#iconHolder {
+  /*in the container, if the elements is smaller than 150px in width,
+   * eleemnt will take up full width fo the container. */
+  width: min(150px, 100%);
+
+  height: max(100px, 4em, 50%);
+  /* Pick the larget value from the 3 options provided. 
+   * 100px: absolute size
+   * 4em: font size
+   * 50%: half the size of the parent container */
+}
+
+/* clamp() function */
+/* Takes 3 values: min, scaling and max value.
+ * */
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  /* scales according to the viewport's width. */
+}

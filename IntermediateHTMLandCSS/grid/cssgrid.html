@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 75px 75px 75px;
+      grid-template-rows: 75px 75px;
+
+      gap: 32px; /* gap */
+    }
+
+    .grid-container > .card {
+      /* selecting divs within divs */
+      border: 1px solid blue;
+    }
+
+    .card {
+      background-color: peachpuff;
+      gap: 32px;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>

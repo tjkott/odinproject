@@ -1,0 +1,22 @@
+body {
+  background-image: url("https://unsplash.com/photos/a-full-moon-rising-over-a-forest-of-trees-2yFdcoGaGW8");
+  display: flex;
+  flex-direction: column;
+  /*centering: */
+  justify-content: center; /* horizontally */
+  align-items: center; /* vertically*/
+  min-height: 100vh; /*ensures body takes up full size of the viewport*/
+  border: 5px solid red;
+}
+
+.signup-form {
+  display: inline-block; /* center form horizontally */
+  text-align: left;
+}
+.form-group label {
+  display: block; /*force label to its own line*/
+  margin-bottom: 5px; /*place a gap of 5px between label and input box*/
+}
+.form-group input {
+  display: block;
+}
